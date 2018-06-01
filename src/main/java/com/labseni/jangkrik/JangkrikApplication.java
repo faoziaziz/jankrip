@@ -23,7 +23,7 @@ public class JangkrikApplication {
       return "home";
     }
 	
-    @RequestMapping("/createuserform")
+    @RequestMapping("/daftar")
     public String createUserForm(Model model) {
         model.addAttribute("user", new User());
         return "createuser";
