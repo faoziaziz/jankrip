@@ -26,7 +26,7 @@ public class JangkrikApplication {
     @RequestMapping("/daftar")
     public String createUserForm(Model model) {
         model.addAttribute("user", new User());
-        return "createuser";
+        return "daftar";
     }
 
     @RequestMapping("/users")
@@ -55,7 +55,7 @@ public class JangkrikApplication {
         }
     }
 
-    @RequestMapping(value="/createuser", method=RequestMethod.POST)
+    @RequestMapping(value="/daftar", method=RequestMethod.POST)
     public String createUser(@ModelAttribute User user, Model model) {
         model.addAttribute("user", user);
         int id = user.getId();
