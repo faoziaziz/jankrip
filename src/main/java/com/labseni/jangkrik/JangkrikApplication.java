@@ -18,11 +18,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class JangkrikApplication {
 
     @RequestMapping("/")
-  //  @ResponseBody
     String home(Model model) {
       return "home";
     }
 	
+    @RequestMapping("/medusa")
+    String medusa(Model model) {
+      return "medusa";
+    }
     @RequestMapping("/daftar")
     public String createUserForm(Model model) {
         model.addAttribute("user", new User());
