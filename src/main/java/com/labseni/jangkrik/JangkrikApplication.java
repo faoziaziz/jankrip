@@ -26,6 +26,10 @@ public class JangkrikApplication {
     String medusa(Model model) {
       return "medusa";
     }
+    @RequestMapping("/asterix")
+    String medusa(Model model) {
+      return "asterix";
+    }
     @RequestMapping("/daftar")
     public String createUserForm(Model model) {
         model.addAttribute("user", new User());
