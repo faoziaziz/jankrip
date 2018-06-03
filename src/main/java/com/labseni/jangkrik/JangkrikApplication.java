@@ -27,7 +27,7 @@ public class JangkrikApplication {
       return "medusa";
     }
     @RequestMapping("/asterix")
-    String medusa(Model model) {
+    String asterix(Model model) {
       return "asterix";
     }
     @RequestMapping("/daftar")
