@@ -32,6 +32,10 @@ public class JangkrikApplication {
       return "itbe";
     }
 	
+    @RequestMapping("/idiot")
+    String idiot(Model model) {
+      return "idiot";
+    }
     @RequestMapping("/asterix")
     String asterix(Model model) {
       return "asterix";
