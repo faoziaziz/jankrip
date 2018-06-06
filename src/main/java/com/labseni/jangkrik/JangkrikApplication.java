@@ -26,6 +26,12 @@ public class JangkrikApplication {
     String medusa(Model model) {
       return "medusa";
     }
+
+    @RequestMapping("/itbe")
+    String itbe(Model model) {
+      return "itbe";
+    }
+	
     @RequestMapping("/asterix")
     String asterix(Model model) {
       return "asterix";
