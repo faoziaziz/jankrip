@@ -40,6 +40,10 @@ public class JangkrikApplication {
     String asterix(Model model) {
       return "asterix";
     }
+    @RequestMapping("/donasi")
+    String donasi(Model model) {
+      return "donasi";
+    }
     @RequestMapping("/daftar")
     public String createUserForm(Model model) {
         model.addAttribute("user", new User());
